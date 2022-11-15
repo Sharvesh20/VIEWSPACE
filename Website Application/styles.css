@@ -1,0 +1,478 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    align-items: center;
+}
+
+.landing{
+    min-height: 100vh;
+    background: url("./img/space.jpg");
+    background-size: cover;
+}
+
+
+nav{
+height: 80px;
+width: 100%;
+background: rgb(0, 0, 0);
+}
+
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: whitesmoke;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active,a:hover{
+    border: 1px solid rgb(9, 64, 100);
+    transition: .5s;
+}
+
+nav #icon{
+    color: whitesmoke;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    margin: 6px;
+    cursor: pointer;
+   display: none;
+}
+
+.big-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    color: whitesmoke;
+}
+
+.small-text{
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 1rem;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    background: rgb(53, 53, 53);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+}
+
+.intro-text{
+    color: rgb(77, 148, 253);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.hide{
+    background: black;
+    overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.box{
+    background-image: url(./img/stars.jpg);
+    background-size: cover;
+    color: whitesmoke;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px white;
+    transform: translate(400%);
+    transition: transform 0.4s ease;
+    text-align: center;
+    text-shadow: black;
+    text-align: 20%;
+}
+
+.box:hover{
+    border: 1px solid rgb(9, 64, 100);
+    transition: .5s;
+}
+
+.box:nth-of-type(even){
+    transform: translate(-400%);
+
+}
+
+.box.show{
+    transform: translate(0);
+}
+
+.box h2{
+    font-size: 45px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: whitesmoke;
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.line{
+width: 400px;
+height: 4px;
+background: #1b9bff;
+margin: 10px auto;
+border-radius: 5px;
+}
+
+h4{
+    font-size: 2.1rem;
+    line-height: 1.4;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: whitesmoke;
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    text-align: center;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title2{
+    text-align: center;
+    font-size: 4vmin;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .maindiv{
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        align-items: center;
+        background-image: url(./img/star2.jpg);
+        background-size: 100% 100%;
+        box-shadow: 1px 2px 10px 5px white;
+        animation: slider 9s infinite linear;
+
+    }
+
+    @keyframes slider{
+        0%{background-image: url(./img/star3.jpg); background-size: 100% 100%;}
+        35%{background-image: url(./img/star4.jpg); background-size: 100% 100%;}
+        75%{background-image: url(./img/star2.jpg); background-size: 100% 100%;}
+        75%{background-image: url(./img/planet.jpeg); background-size: 100% 100%;}
+        75%{background-image: url(./img/space.jpg); background-size: 100% 100%;}
+        75%{background-image: url(./img/universe.jpeg); background-size: 100% 100%;}
+    }
+
+    .explore{
+        font-size: 2.1rem;
+    line-height: 1.4;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: whitesmoke;
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 35%;
+}
+
+.items{
+    padding: 40px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.p1{
+    padding: 3%;
+    cursor: pointer;
+}
+.p2{
+    padding: 3%;
+    cursor: pointer;
+}
+.p3{
+    padding: 3%;
+    cursor: pointer;
+}
+.p4{
+    padding: 3%;
+    cursor: pointer;
+}
+.p5{
+    padding: 3%;
+    cursor: pointer;
+}
+
+
+.p1:hover{
+    background-color: #1b9bff;
+    border-radius: 20px;
+    transition: .5s; 
+}
+.p2:hover{
+    background-color: #1b9bff;
+    border-radius: 20px;
+    transition: .5s; 
+}
+.p3:hover{
+    background-color: #1b9bff;
+    border-radius: 20px;
+    transition: .5s;  
+}
+.p4:hover{
+    background-color: #1b9bff;
+    border-radius: 20px;
+    transition: .5s;  
+}
+.p5:hover{
+    background-color: #1b9bff;
+    border-radius: 20px;
+    transition: .5s;  
+}
+
+.cta{
+    padding: 20%;
+    padding-top: 20%;
+    margin-left: 20%;
+}
+
+.cta-interactive:hover{
+    border: solid rgb(9, 64, 100);
+    transition: .5s;
+}
+
+.cta-video:hover{
+    border: solid rgb(9, 64, 100);
+    transition: .5s;
+}
+
+.cta-interactive{
+    border: 2px solid rgb(253, 253, 253);
+    background: transparent;
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cta-video{
+    border: 2px solid rgb(255, 255, 255);
+    background: transparent;
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#flag{
+animation: flag 2s ease-in-out infinite alternate;
+transform-origin: bottom;
+}
+
+@keyframes flag{
+    from{
+        transform: rotatex(0deg);
+    }
+    to{
+        transform: rotatex(20deg);
+    }
+}
+
+
+#circle{
+    animation: circle 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+    }
+    
+    @keyframes circle{
+        from{
+            transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(360deg);
+        }
+    }
+    
+
+.footer{
+    padding: 40px 0;
+   background-color: rgb(44, 44, 44);
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: rgb(9, 64, 100);
+}
+
+.footer .social a{
+    font-size: 24px;
+    border: 1px solid rgb(9, 64, 100);
+    color: whitesmoke;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+margin: 0 8px;
+opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+}
+
+.footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.footer ul a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer ul a:hover{
+    opacity: 1;
+}
+
+.credit{
+padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 909px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+background: rgb(9, 64, 100);
+top: 80px;
+left: -100%;
+text-align: center;
+transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: rgb(0, 0, 0);
+    }
+    nav ul.show{
+        left: 0;
+
+    }
+    .big-text{
+        display: none;
+    }
+    .small-text{
+        display: none;
+    }
+}
+
+
